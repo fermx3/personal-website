@@ -1,0 +1,21 @@
+
+i {
+  margin-right: 5px;
+}
+
+p {
+  font-family: 'Poppins', sans-serif;
+}
+
+.instagram-button {
+  background: #E1306C;
+  /* background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%); */
+  border-color: #E1306C;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+.instagram-button:hover {
+  background: #C13584;
+  border-color: #C13584;
+}
