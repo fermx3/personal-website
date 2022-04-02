@@ -1,3 +1,8 @@
+body {
+  background-image: url("images/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
 i {
   margin-right: 5px;
@@ -5,6 +10,30 @@ i {
 
 p {
   font-family: 'Poppins', sans-serif;
+}
+
+.navbar-brand {
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+}
+
+.navbar-brand > img {
+  margin-right: 5px;
+}
+
+.mail {
+  font-size: 0.8rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+@media (max-width: 600px) {
+  .mail {
+    display: none;
+  }
+}
+
+.container {
+  background-color: #fff;
 }
 
 .instagram-button {
@@ -30,4 +59,8 @@ p {
 
 @media (min-width: 992px) {
   .rounded-lg-3 { border-radius: .3rem; }
+}
+
+.footer {
+  width: 100%;
 }
