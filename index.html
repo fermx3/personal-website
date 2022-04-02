@@ -14,15 +14,19 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <!-- CSS -->
   <link rel="stylesheet" href="styles.css">
+  <!-- Animations -->
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
   <!-- Font Awesome -->
   <script src="https://kit.fontawesome.com/d457f9108b.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
 
-  <nav class="navbar navbar-expand navbar-dark bg-dark">
+  <nav class="navbar navbar-expand navbar-light shadow-sm rounded">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="#trabajo">
           <img src="images/brand.png" alt="" width="24" height="24">
           Fernando Rios
         </a>
@@ -35,18 +39,21 @@
             <li class="nav-item">
               <a class="nav-link" href="mailto:fer.riosalcantara@gmail.com"><i class="fa-solid fa-envelope"></i><span class="mail align-text-bottom">fer.riosalcantara@gmail.com</span></a>
             </li>
+            <!-- <li class="nav-item">
+              <i class="fa-solid fa-toggle-off nav-link" id="dark-mode"></i>
+            </li> -->
           </ul>
         </div>
       </div>
     </nav>
 
-  <div class="container my-5">
+  <div class="container my-5 bg-light animate__animated animate__fadeIn">
     <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
       <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
-        <h1 class="display-4 fw-bold lh-1">Hola! Soy Fernando Rios. Diseñador Web.</h1>
-        <p class="lead">Soy Lic. en Marketing con experiencia en Facebook Ads, SEO y SEM. También soy desarrollador front-end, con instinto para diseñar la mejor experiencia
+        <h1 class="display-4 fw-bold lh-1 animate__animated animate__slideInDown">Hola! Soy Fernando Rios. Diseñador Web.</h1>
+        <p class="lead animate__animated animate__slideInDown">Soy Lic. en Marketing con experiencia en Facebook Ads, SEO y SEM. También soy desarrollador front-end, con instinto para diseñar la mejor experiencia
           de usuario.</p>
-        <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3">
+        <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3 animate__animated animate__slideInDown">
           <a href="https://www.instagram.com/fer.rialc/" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Tooltip on bottom">
             <button type="button" class="instagram-button btn btn-primary btn-lg px-3 me-md-2 fw-bold"><i class="fa-brands fa-instagram fa-shake fa-lg" style="--fa-animation-duration: 2s;"></i> Instagram</button>
           </a>
@@ -55,12 +62,43 @@
           </a>
         </div>
       </div>
-      <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg">
+      <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg animate__animated animate__slideInDown">
         <img class="rounded-3" src="images/portada.jpg" alt="diseño web" width="720">
       </div>
     </div>
   </div>
 
+  <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3" id="trabajo">
+      <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+        <div class="my-3 p-3">
+          <h2 class="display-5">Atémpora</h2>
+          <p class="lead">Tienda online. Bolsos de piel de nopal.</p>
+          <a href="http://atempora.mx"><button class="btn btn-outline-dark btn-sm">Ver web</button></a>
+        </div>
+        <div class="bg-body shadow-sm mx-auto" style="width: 80%; height: 100%; border-radius: 21px 21px 0 0;"><img src="images/atemporamx.png" alt="atempora.mx sitio web"></div>
+      </div>
+      <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+        <div class="my-3 py-3">
+          <h2 class="display-5">FeelInk Art Tattoo</h2>
+          <p class="lead">Tattoo studio en Playa del Carmen.</p>
+          <a href="http://feelinkarttattoo.com/"><button class="btn btn-outline-dark btn-sm">Ver web</button></a>
+        </div>
+        <div class="bg-body shadow-sm mx-auto" style="width: 80%; height: 100%; border-radius: 21px 21px 0 0;"><img src="images/feelink.png" alt="feelink.com sitio web"></div>
+      </div>
+    </div>
+
+  <div class="px-4 py-5 mt-5 text-center bg-light">
+  <h2 class="display-6 fw-bold">¡Trabajemos juntos!</h2>
+  <div class="col-lg-6 mx-auto">
+    <p class="lead">Hagamos crecer tu negocio colocándolo en línea que es donde están los clientes.</p>
+    <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+      <button type="button" class="instagram-button btn btn-primary btn-lg px-4 gap-3"><i class="fa-brands fa-instagram fa-shake fa-lg" style="--fa-animation-duration: 2s;"></i> Mándame un mensaje</button>
+    </div>
+  </div>
+</div>
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script type="text/javascript" src="main.js"></script>
 </body>
 </html>
