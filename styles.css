@@ -4,16 +4,19 @@ body {
   background-size: cover;
 }
 
-i {
+.dark-background {
+  background-image: url("images/dark-background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #f0f0f0;
+}
+
+.btn-icon {
   margin-right: 5px;
 }
 
 p {
   font-family: 'Poppins', sans-serif;
-}
-
-a {
-  color: #fff;
 }
 
 .navbar-brand {
@@ -32,10 +35,11 @@ a {
 .mail {
   font-size: 0.8rem;
   font-family: 'Poppins', sans-serif;
+  margin-left: 5px;
 }
 
 @media (max-width: 600px) {
-  .mail {
+  .nav-contact {
     display: none;
   }
 }
@@ -70,7 +74,7 @@ a {
 }
 
 /*
- * Extra utilities
+ * Extra utilities Bootstrap products
  */
 
 .flex-equal > * {
