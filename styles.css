@@ -24,12 +24,12 @@ p {
   font-weight: bold;
 }
 
-.navbar-brand > img {
+.navbar-brand>img {
   margin-right: 5px;
 }
 
-.nav-link {
-  color: rgba(255,255,255,.55);
+.moon-sun {
+  color: gray;
 }
 
 .mail {
@@ -70,18 +70,20 @@ p {
 }
 
 @media (min-width: 992px) {
-  .rounded-lg-3 { border-radius: .3rem; }
+  .rounded-lg-3 {
+    border-radius: .3rem;
+  }
 }
 
 /*
  * Extra utilities Bootstrap products
  */
-
-.flex-equal > * {
+.flex-equal>* {
   flex: 1;
 }
+
 @media (min-width: 768px) {
-  .flex-md-equal > * {
+  .flex-md-equal>* {
     flex: 1;
   }
 }
