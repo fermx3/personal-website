@@ -4,6 +4,10 @@ body {
   background-size: cover;
 }
 
+p {
+  font-family: 'Poppins', sans-serif;
+}
+
 .dark-background {
   background-image: url("images/dark-background.png");
   background-repeat: no-repeat;
@@ -13,10 +17,6 @@ body {
 
 .btn-icon {
   margin-right: 5px;
-}
-
-p {
-  font-family: 'Poppins', sans-serif;
 }
 
 .navbar-brand {
@@ -36,12 +36,6 @@ p {
   font-size: 0.8rem;
   font-family: 'Poppins', sans-serif;
   margin-left: 5px;
-}
-
-@media (max-width: 600px) {
-  .nav-contact {
-    display: none;
-  }
 }
 
 .trabajemos-juntos {
