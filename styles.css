@@ -4,6 +4,10 @@ body {
   background-size: cover;
 }
 
+h1 {
+  font-family: 'Oswald', sans-serif;
+}
+
 p {
   font-family: 'Poppins', sans-serif;
 }
@@ -36,6 +40,12 @@ p {
   font-size: 0.8rem;
   font-family: 'Poppins', sans-serif;
   margin-left: 5px;
+}
+
+.client-img {
+  width: 180px;
+  margin: 40px 60px;
+  align-items: center;
 }
 
 .trabajemos-juntos {
