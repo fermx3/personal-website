@@ -1,8 +1,21 @@
 const checkbox = document.querySelector(".checkbox");
+const checkboxJQ = $(".checkbox");
 //Dark Theme Switch
 
 //$("#dark-mode").click(darkModeToggle()
 //);
+
+if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+  darkModeToggle();
+  checkbox.classList.toggle("on");
+  checkbox.setAttribute("aria-checked", !checkboxJQ.getAttribute("aria-checked"));
+}
+
+// $("#test").click(function() {
+//   checkboxJQ.prop("aria-checked", !checkboxJQ.prop("aria-checked"));
+//   checkboxJQ.toggleClass("on");
+//   console.log(checkboxJQ[0]["aria-checked"]);
+// });
 
 function darkModeToggle() {
   const themeColor = document.getElementsByName("theme-color")[0];
@@ -20,7 +33,6 @@ function darkModeToggle() {
 }
 
 //DarkTheme Switch 2.0
-
 
 checkbox.addEventListener("click", function(event) {
   if (checkbox.classList.contains("on")) {
