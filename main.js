@@ -4,6 +4,10 @@ const checkbox = document.querySelector(".checkbox");
 //$("#dark-mode").click(darkModeToggle()
 //);
 
+if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+  darkModeToggle();
+}
+
 function darkModeToggle() {
   const themeColor = document.getElementsByName("theme-color")[0];
   $("nav").toggleClass("bg-dark navbar-light navbar-dark")
