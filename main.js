@@ -1,14 +1,15 @@
 const checkbox = document.querySelector(".checkbox");
-const checkboxJQ = $(".checkbox");
 //Dark Theme Switch
 
 //$("#dark-mode").click(darkModeToggle()
 //);
 
+console.log(checkbox.getAttribute("aria-checked"));
+
 if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
   darkModeToggle();
   checkbox.classList.toggle("on");
-  checkbox.setAttribute("aria-checked", !checkboxJQ.getAttribute("aria-checked"));
+  checkbox.setAttribute("aria-checked", !checkbox.getAttribute("aria-checked"));
 }
 
 // $("#test").click(function() {
