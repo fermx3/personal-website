@@ -32,6 +32,49 @@ p {
   margin-right: 5px;
 }
 
+.checkbox {
+  width: 26px;
+  height: 16px;
+  padding: 4px;
+
+  display: flex;
+  align-items: center;
+
+  background-color: #f0f0f0;
+
+  border-radius: 24px;
+  border: solid 2px gray;
+
+  cursor: pointer;
+}
+
+.checkbox::before {
+  content: "";
+  display: inline-block;
+
+  width: 8px;
+  height: 8px;
+  border-radius: 12px;
+
+  background-color: gray;
+
+  transition: 
+    width 200ms,height 200ms,
+    transform 200ms, background-color 200ms;
+}
+
+.checkbox.on {
+  border-color: #f0f0f0;
+  background-color: #f0f0f0;
+}
+
+.checkbox.on::before {
+  background-color: gray;
+  width: 10px;
+  height: 10px;
+  transform: translateX(8px);
+}
+
 .moon-sun {
   color: gray;
 }
