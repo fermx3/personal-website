@@ -1,11 +1,6 @@
 const checkbox = document.querySelector(".checkbox");
 //Dark Theme Switch
 
-//$("#dark-mode").click(darkModeToggle()
-//);
-
-console.log(checkbox.getAttribute("aria-checked"));
-
 if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
   darkModeToggle();
   checkbox.classList.toggle("on");
