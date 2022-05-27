@@ -12,6 +12,16 @@ p {
   font-family: 'Poppins', sans-serif;
 }
 
+.navbar-brand {
+  letter-spacing: 2px;
+  font-weight: 300;
+
+  background: linear-gradient(-217deg, rgba(255,48,108,.8) 50.71%, rgba(255,48,108,0.2));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .dark-background {
   background-image: url("images/dark-background.png");
   background-repeat: no-repeat;
